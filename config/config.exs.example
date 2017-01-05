@@ -3,4 +3,7 @@ use Mix.Config
 config :slack_poster,
   slack_token: "slack_token",
   slack_people: ["Foo Bar", "Fooo Baar", "Foooo Baaar"],
-  facebook_page_url: "https://www.facebook.com/example-page/"
+  slack_channel: "#general",
+  facebook_page_url: "https://www.facebook.com/example-page/",
+  slack_icon_emoji: ":dog:"
+  slack_name: "Slack poster"

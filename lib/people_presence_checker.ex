@@ -23,6 +23,7 @@ defmodule PeoplePresenceChecker do
   def more_than_half_present?(members) do
     present_count = Enum.count(members, fn(x) -> Enum.member?(@present_statuses, x["presence"]) end)
     all_count = Enum.count(members)
+    IO.puts "(#{present_count}/#{all_count})"
     present_count / all_count >= 0.5
   end
 
